@@ -27,7 +27,7 @@ namespace myMLAppCSVPricePredict
             // Try model on sample data
             ModelOutput result = predEngine.Predict(input);
 
-
+            Console.WriteLine(result.Score);
         }
     }
 }
