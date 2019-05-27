@@ -35,12 +35,17 @@ namespace myMLAppCSVPricePredict
 
             /* model findings:
              * -- first is for 20s model, second linie will represent the more trained model with RS 0.9631 (600s), from RS 0.944 (20s)
-              Distance: 3     Passenger Count: 3      Trip time (s): 1099     Price:  14.11699
-              Distance: 3     Passenger Count: 1      Trip time (s): 1099     Price:  14.11699
-              Distance: 2     Passenger Count: 1      Trip time (s): 1099     Price:  12.59949
-              Distance: 2     Passenger Count: 1      Trip time (s): 800      Price:  10.5829   
-              Distance: 1.3f  Passenger Count: 1      Trip time (s): 385      Price:  6.830118, this is good since actual data has 1.3f, 1,385 as an output of 7
-                                                                              600s model: 6.866996
+              Distance: 3       Passenger Count: 3      Trip time (s): 1099     Price RS 0.944:   14.11699
+              Distance: 3       Passenger Count: 1      Trip time (s): 1099     Price RS 0.944:   14.11699
+
+              Distance: 2       Passenger Count: 1      Trip time (s): 1099     Price RS 0.944:   12.59949
+                                                                                Price RS 0.9361:
+
+              Distance: 2       Passenger Count: 1      Trip time (s): 800      Price RS 0.944:   10.5829   
+                                                                                
+              Distance: 1.3f    Passenger Count: 1      Trip time (s): 385      Price RS 0.944, this is good since actual data has 1.3f, 1,385 as an output of 7
+                                                                                Price RS 0.9361:  6.866996
+                                                                              
               
 
              */
