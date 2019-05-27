@@ -7,8 +7,8 @@
 
 ## Contact
 #### Developer/Company
-* e-mail: 13schishti@gmail.com
-* Twitter: 
+* e-mail: 13schishti@gmail.com [13schishti@gmail.com](mailto:13schishti@gmail.com "mail Salman")
+* Twitter: [@salmanmkc](https://twitter.com/salmanmkc "SalmanMKC on twitter")
 * LinkedIn: [Salman Chishti](https://www.linkedin.com/in/salman-chishti-906898173/ "Salman Chishti on LinkedIn")
 
 
