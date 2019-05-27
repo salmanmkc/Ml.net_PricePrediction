@@ -1,7 +1,7 @@
 ﻿using System;
 // Add ML.NET namespaces
 using Microsoft.ML;
-
+using MyMLAppCSVPricePredictML.Model.DataModels;
 
 namespace myMLAppCSVPricePredict
 {
