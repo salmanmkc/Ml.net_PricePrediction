@@ -14,6 +14,7 @@ namespace myMLAppCSVPricePredict
 
         public static void ConsumeModel()
         {
+
             // Load the model
             MLContext mlContext = new MLContext();
             ITransformer mlModel = mlContext.Model.Load("MLModel.zip", out var modelInputSchema);
@@ -21,10 +22,12 @@ namespace myMLAppCSVPricePredict
 
             // Use the code below to add input data
             var input = new ModelInput();
-            // input.
+            input.Trip_distance = 3;
 
             // Try model on sample data
             ModelOutput result = predEngine.Predict(input);
+
+
         }
     }
 }
