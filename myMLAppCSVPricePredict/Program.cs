@@ -23,6 +23,9 @@ namespace myMLAppCSVPricePredict
             // Use the code below to add input data
             var input = new ModelInput();
             input.Trip_distance = 3;
+            input.Passenger_count = 3;
+            input.Trip_time_in_secs = 1099;
+            //input.Payment_type = "CRD":
 
             // Try model on sample data
             ModelOutput result = predEngine.Predict(input);
