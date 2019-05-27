@@ -31,6 +31,15 @@ namespace myMLAppCSVPricePredict
             ModelOutput result = predEngine.Predict(input);
 
             Console.WriteLine(result.Score);
+
+
+          /* model findings:
+            Distance: 3     Passenger Count: 3      Trip time (s): 1099     Price:  14.11699
+            
+
+
+
+           */
         }
     }
 }
