@@ -11,6 +11,7 @@ using System.Linq;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using MyMLAppCSVPricePredictML.Model.DataModels;
+using Microsoft.ML.Trainers.FastTree;
 
 namespace MyMLAppCSVPricePredictML.ConsoleApp
 {
@@ -53,7 +54,7 @@ namespace MyMLAppCSVPricePredictML.ConsoleApp
                                       .Append(mlContext.Transforms.Concatenate("Features", new[] { "vendor_id", "payment_type", "rate_code", "passenger_count", "trip_time_in_secs", "trip_distance" }));
 
             // Set the training algorithm 
-            var trainer = mlContext.Regression.Trainers.FastTree(labelColumnName: "fare_amount", featureColumnName: "Features");
+            var trainer = mlContext.Regression.Trainers.FastTree(new FastTreeRegressionTrainer.Options() { NumberOfLeaves = 112, MinimumExampleCountPerLeaf = 1, NumberOfTrees = 100, LearningRate = 0.1900188f, Shrinkage = 0.5220194f, LabelColumnName = "fare_amount", FeatureColumnName = "Features" });
             var trainingPipeline = dataProcessPipeline.Append(trainer);
 
             return trainingPipeline;
