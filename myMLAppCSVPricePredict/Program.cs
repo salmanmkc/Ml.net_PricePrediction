@@ -23,7 +23,7 @@ namespace myMLAppCSVPricePredict
             // Use the code below to add input data
             var input = new ModelInput();
             input.Trip_distance = 3;
-            input.Passenger_count = 3;
+            input.Passenger_count = 1;
             input.Trip_time_in_secs = 1099;
             //input.Payment_type = "CRD":
 
@@ -39,6 +39,7 @@ namespace myMLAppCSVPricePredict
                                                                                 Price RS 0.9361:    14.00097
 
               Distance: 3       Passenger Count: 1      Trip time (s): 1099     Price RS 0.944:     14.11699
+                                                                                Price RS 0.9361:    13.99395
 
               Distance: 2       Passenger Count: 1      Trip time (s): 1099     Price RS 0.944:     12.59949
                                                                                 Price RS 0.9361:    12.41535        
